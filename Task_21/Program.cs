@@ -28,7 +28,5 @@ pointTwo = enterData();
 double deltaX = pointOne[0]  - pointTwo[0];
 double deltaZ = pointOne[2] - pointTwo[2];
 double deltaY = pointOne[1] - pointTwo[1];
-double flatDis = distanceCalc(deltaX, deltaZ);
-double resDis = distanceCalc(deltaY, flatDis);
-Console.WriteLine($"Расстояние между точками = {Math.Round(resDis, 2)}");
+Console.WriteLine($"Расстояние между точками = {Math.Round(distanceCalc(deltaY, distanceCalc(deltaX, deltaZ)), 2)}");
 
