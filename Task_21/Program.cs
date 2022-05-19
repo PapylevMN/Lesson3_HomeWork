@@ -8,14 +8,11 @@ double distanceCalc(double delta1, double delta2)
 int [] enterData()
 {   int [] point = new int[3];
     Console.Write("x = ");
-    int x = int.Parse(Console.ReadLine());
-    point[0] = x;
+    point[0] = int.Parse(Console.ReadLine());
     Console.Write("y = ");
-    int y = int.Parse(Console.ReadLine());
-    point[1] = y;
+    point[1] = int.Parse(Console.ReadLine());
     Console.Write("z = ");
-    int z = int.Parse(Console.ReadLine());
-    point[2] = z; 
+    point[2] = int.Parse(Console.ReadLine());
     return point;
 }
 int [] pointOne = new int[3];
